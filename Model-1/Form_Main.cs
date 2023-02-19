@@ -12,10 +12,10 @@ namespace Model_1
         private void buttonMastFunc_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_MastFunc form2 = new Model_1.Form_MastFunc();
+            Form_MastFunc form2 = new Model_1.Form_MastFunc(textBoxOrigExpression.Text);
             form2.ShowDialog();
             this.Show();
-            textBoxOrigExpression.Text = form2.expression;
+            textBoxOrigExpression.Text = form2.Expression;
         }
     }
 }
